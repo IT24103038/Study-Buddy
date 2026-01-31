@@ -1,0 +1,51 @@
+/*
+External QSS for Study Buddy
+Edit colors, spacing and fonts here.
+*/
+
+QMainWindow {
+    background-color: #121214;
+    color: #E6E6E6;
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 12pt;
+}
+
+QWidget {
+    background-color: transparent;
+}
+
+QPushButton {
+    background-color: #1F6FEB;
+    color: white;
+    border: 1px solid #185ABC;
+    padding: 6px 10px;
+    border-radius: 6px;
+}
+
+QPushButton:hover {
+    background-color: #2A7BFF;
+}
+
+QPushButton:pressed {
+    background-color: #1558C4;
+}
+
+QTextEdit, QPlainTextEdit, QLineEdit {
+    background-color: #1B1B1C;
+    color: #E6E6E6;
+    border: 1px solid #2C2C2D;
+    border-radius: 6px;
+    padding: 6px;
+}
+
+QLabel#titleLabel {
+    font-size: 14pt;
+    font-weight: 600;
+    color: #FFFFFF;
+}
+
+/* Sidebar */
+QWidget#sidebar {
+    background-color: #0E0E0F;
+    border-right: 1px solid #232324;
+}
