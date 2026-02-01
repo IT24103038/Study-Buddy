@@ -44,12 +44,12 @@ class Summarizer:
         Returns:
             Formatted prompt string
         """
-        prompt = f"""Summarize the following lesson for a university student in simple language.
-Use bullet points.
+        prompt = f"""Summarize the following lesson for a student in simple language.
+        Use bullet points.
 
-Lesson text:
-{text}
+        Lesson text:
+        {text}
 
-Summary:"""
+        Summary:"""
         
         return prompt

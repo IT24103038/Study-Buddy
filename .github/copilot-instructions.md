@@ -27,6 +27,11 @@ Study Buddy is an **AI-powered desktop app** that helps students with:
 
 The application uses **PyQt6** for the UI and external **AI APIs** for intelligence.
 
+## How the App Works
+
+- Students can input lesson content like text from their lectures or files (e.g., PDFs, TXTs), and the app will generate summaries and practice questions to aid their study.
+- The UI is modular, with separate views for summarization, question generation, and other features.
+
 ---
 
 ## Tech Stack

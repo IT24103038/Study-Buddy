@@ -10,6 +10,7 @@ from PyQt6.QtCore import Qt
 from ui.sidebar import Sidebar
 from ui.summarizer_view import SummarizerView
 from ui.question_view import QuestionView
+from ui.lessons_view import LessonsView
 
 class App:
     def __init__(self):
@@ -78,6 +79,8 @@ class App:
             self.current_view = SummarizerView()
         elif view_name == "questions":
             self.current_view = QuestionView()
+        elif view_name == "lessons":
+            self.current_view = LessonsView()
         else:
             # Default view - coming soon
             self.current_view = QWidget()

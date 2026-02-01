@@ -1,6 +1,5 @@
 """
 Study Buddy - Main Entry Point
-A Python-based desktop application for students
 """
 
 from ui.app import App
