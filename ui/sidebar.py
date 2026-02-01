@@ -36,6 +36,7 @@ class Sidebar(QWidget):
         layout.addWidget(title)
         
         # Navigation buttons
+        self.create_nav_button(layout, "Lessons", "lessons")
         self.create_nav_button(layout, "Summarizer", "summarizer")
         self.create_nav_button(layout, "Questions", "questions")
         self.create_nav_button(layout, "Schedule", "schedule")

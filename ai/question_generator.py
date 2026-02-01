@@ -45,12 +45,13 @@ class QuestionGenerator:
             Formatted prompt string
         """
         prompt = f"""Generate 5 practice questions based on the following lesson text.
-Make them suitable for university students.
-Include a mix of question types (multiple choice, short answer, etc.).
+        Make them suitable for university students.
+        Make sure to only use information from the lesson text.
+        Include a mix of question types (multiple choice, short answer, etc.).
 
-Lesson text:
-{text}
+        Lesson text:
+        {text}
 
-Questions:"""
+        Questions:"""
         
         return prompt

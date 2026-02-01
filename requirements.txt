@@ -1,1 +1,4 @@
 PyQt6==6.6.1
+pypdf==4.0.1
+google-generativeai
+python-dotenv==1.0.0
