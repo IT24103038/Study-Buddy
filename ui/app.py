@@ -57,6 +57,13 @@ class App:
         layout.setStretch(0, 1)
         layout.setStretch(1, 4)
         
+        # Create view mapping for cleaner view switching
+        self.view_classes = {
+            "summarizer": SummarizerView,
+            "questions": QuestionView,
+            "lessons": LessonsView
+        }
+        
         # Initialize with summarizer view
         self.current_view = None
         self.switch_view("summarizer")
@@ -74,13 +81,10 @@ class App:
             self.current_view.deleteLater()
             self.current_view = None
         
-        # Load new view
-        if view_name == "summarizer":
-            self.current_view = SummarizerView()
-        elif view_name == "questions":
-            self.current_view = QuestionView()
-        elif view_name == "lessons":
-            self.current_view = LessonsView()
+        # Load new view using dictionary lookup
+        view_class = self.view_classes.get(view_name)
+        if view_class:
+            self.current_view = view_class()
         else:
             # Default view - coming soon
             self.current_view = QWidget()
